@@ -20,6 +20,10 @@ def embed(text: str, task: str = "passage") -> list[float]:
     """
     embed _summary_
 
+    This function embeds the text into two objects:
+    - passage: fragmento do texto que esta sendo buscado
+    - query: consulta
+
     _extended_summary_
 
     Args:
@@ -36,10 +40,13 @@ def embed(text: str, task: str = "passage") -> list[float]:
     if task not in ["passage", "query"]:
         raise ValueError("Task must be either 'passage' or 'query'")
 
+    # cria prefixos de task selecionada para o texto inserido
+    # otimiza encontrar os valores pelo modelo
     prefixed_text = f"{task}: {text}"
     prefixed_text = prefixed_text.strip().replace("\n", " ")
     prefixed_text = " ".join(prefixed_text.split())
 
+    # gera o enconding vetorial do texto com prefixo
     embedding = model.encode(
         prefixed_text, convert_to_numpy=True, normalize_embeddings=True
     ).tolist()

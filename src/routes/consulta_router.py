@@ -12,9 +12,7 @@ Copyright (c) - Creative Commons Attribution 2025
 
 from typing import Annotated
 
-import numpy as np
 from fastapi import APIRouter, Depends
-from scipy.spatial.distance import cosine
 from sqlmodel import Session, select
 
 from src.datamodels.consulta_models import Consulta, Response, ResponseItems, SourceItem
@@ -38,17 +36,17 @@ def request_consulta(
     Returns:
         Response: A list of relevant documents.
     """
-    question_vec = embed(consulta.question, task="query")
+    question_vec = embed(consulta.question, task="query")  # embed the question
 
     results = session.exec(
         select(Embedded)
         .order_by(Embedded.embedding.cosine_distance(question_vec))  # type: ignore
         .limit(2)
-    ).all()
-
-    response_items = []
+    ).all()  # use the section - here we are limiting by the two best results
+    # here is the follow up of the data models developed for this applicatoin
+    response_items = []  # create the response items list
     for doc in results:
         sources = [SourceItem(id=str(doc.source_id), url=doc.url)]
         response_items.append(ResponseItems(payload=doc.payload, sources=sources))
-
+    # return the Response object
     return Response(docs=response_items)
