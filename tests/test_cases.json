@@ -1,0 +1,30 @@
+{
+    "Há quanto tempo a Doutor-IE desenvolve documentação técnica?": {
+        "answer": "A Doutor-IE é especialista em desenvolver informação técnica para reparação automotiva. A Doutor-IE é uma empresa brasileira referência em documentação técnica online para diagnóstico e reparação automotiva profissional. Há mais de 25 anos a Doutor-IE desenvolve documentação técnica para manutenção, diagnóstico e reparo de sistemas automotivos. Atende todo o aftermarket automotivo, como oficinas independentes, centros automotivos e redes de oficinas.",
+        "source": {
+            "id": "01_quem_somos",
+            "url": "https://doutorie.com.br/quem-somos/"
+        }
+    },
+    "Qual é a missão da Doutor-IE?": {
+        "answer": "Desenvolver soluções eficazes, inovadoras e confiáveis para a reparação automotiva.",
+        "source": {
+            "id": "03_quem_somos",
+            "url": "https://doutorie.com.br/quem-somos/"
+        }
+    },
+    "Como acessar um veículo na Plataforma?": {
+        "answer": "Para acessar um veículo na Plataforma existem 3 formas: Número do chassi - Essa é a identificação mais precisa e rápida. Para isso, basta utilizar a câmera para escanear o código, ou anexar uma imagem do seu dispositivo para efetuar a leitura. Você também pode digitar os 10 primeiros dígitos do chassi do veículo. Seleção manual - A partir da tela inicial, selecione o ano-modelo, a montadora, o veículo e a motorização. Últimos acessos - veja uma relação dos últimos veículos acessados em sua conta.",
+        "source": {
+            "id": "01_funcionalidades_plataforma_doutorie",
+            "url": "https://doutorie.com.br/duvidas/"
+        }
+    },
+    "Como imprimir um manual na Plataforma Doutor-IE?": {
+        "answer": "Atenção! A impressão é um funcionalidade disponível somente para dispositivos Windows. A impressão dos manuais é feita diretamente da Plataforma Doutor-IE. No dispositivo Windows, basta selecionar a opção de impressão (no menu lateral direito) e escolher as páginas que deseja imprimir.",
+        "source": {
+            "id": "09_funcionalidades_plataforma_doutorie",
+            "url": "https://doutorie.com.br/duvidas/"
+        }
+    }
+}
