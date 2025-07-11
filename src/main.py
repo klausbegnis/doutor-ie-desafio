@@ -12,7 +12,8 @@ Copyright (c) - Creative Commons Attribution 2025
 
 from fastapi import FastAPI
 
-from src.app.routes.consulta_router import consulta_router
+from src.lifespan.postgre_startup import lifespan
+from src.routes.consulta_router import consulta_router
 
-app = FastAPI()
+app = FastAPI(lifespan=lifespan)
 app.include_router(consulta_router)
