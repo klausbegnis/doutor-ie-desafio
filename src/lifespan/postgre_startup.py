@@ -13,7 +13,6 @@ Copyright (c) - Creative Commons Attribution 2025
 import re
 from contextlib import asynccontextmanager
 from pathlib import Path
-from typing import AsyncGenerator
 
 from fastapi import FastAPI
 from sqlmodel import Session, SQLModel, select
@@ -72,7 +71,7 @@ def create_question_payload_chunks(file_path: Path, source_id: int) -> list[dict
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI) -> AsyncGenerator[None]:  # pylint: disable=unused-argument
+async def lifespan(app: FastAPI):  # pylint: disable=unused-argument
     """
     _summary_
 

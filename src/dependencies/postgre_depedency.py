@@ -10,8 +10,6 @@ Modified By: Klaus Begnis (kbegnis23@gmail.com>)
 Copyright (c) - Creative Commons Attribution 2025
 """
 
-from typing import Generator
-
 from sqlmodel import Session, create_engine
 
 from src.env import DATABASE_URL
@@ -19,7 +17,7 @@ from src.env import DATABASE_URL
 engine = create_engine(DATABASE_URL)
 
 
-def get_session() -> Generator[Session, None, None]:
+def get_session():
     """
     get_session _summary_
 
