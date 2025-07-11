@@ -13,10 +13,35 @@ Copyright (c) - Creative Commons Attribution 2025
 from sentence_transformers import SentenceTransformer
 
 # modelo Sentence-Transformers do HuggingFace sem utilizacao de tokens API
-model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-mpnet-base-v2")
+model = SentenceTransformer("intfloat/multilingual-e5-large")
 
 
-def embed(text: str) -> list[float]:
-    text = text.strip().replace("\n", " ").replace("\r", " ")
-    text = " ".join(text.split())
-    return model.encode(text, convert_to_numpy=True, normalize_embeddings=True).tolist()
+def embed(text: str, task: str = "passage") -> list[float]:
+    """
+    embed _summary_
+
+    _extended_summary_
+
+    Args:
+        text (str): _description_
+        task (str, optional): _description_. Defaults to "passage".
+
+    Raises:
+        ValueError: _description_
+
+    Returns:
+        list[float]: _description_
+    """
+    # the selected model requires a passage and a query
+    if task not in ["passage", "query"]:
+        raise ValueError("Task must be either 'passage' or 'query'")
+
+    prefixed_text = f"{task}: {text}"
+    prefixed_text = prefixed_text.strip().replace("\n", " ")
+    prefixed_text = " ".join(prefixed_text.split())
+
+    embedding = model.encode(
+        prefixed_text, convert_to_numpy=True, normalize_embeddings=True
+    ).tolist()
+
+    return embedding  # type: ignore
