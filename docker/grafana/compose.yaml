@@ -11,12 +11,12 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     restart: unless-stopped
     networks:
-      - data_persistency
+      - doutor_ie_desafio
 
 volumes:
   grafana-storage:
 
 networks:
-  data_persistency:
-    name: data_persistency
+  doutor_ie_desafio:
+    name: doutor_ie_desafio
     driver: bridge

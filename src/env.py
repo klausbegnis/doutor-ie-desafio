@@ -12,7 +12,7 @@ Copyright (c) - Creative Commons Attribution 2025
 
 from pathlib import Path
 
-DATABASE_URL = "postgresql://root:root@localhost:5432/doutor-ie"
+DATABASE_URL = "postgresql://root:root@postgresql:5432/doutor-ie"
 CONTENT_SOURCES = [
     {
         "url": "https://doutorie.com.br/duvidas/",

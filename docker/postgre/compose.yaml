@@ -12,7 +12,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
     networks:
-      - data_persistency
+      - doutor_ie_desafio
 
   pgadmin:
     image: dpage/pgadmin4
@@ -26,11 +26,11 @@ services:
       - postgresql
     restart: unless-stopped
     networks:
-      - data_persistency
+      - doutor_ie_desafio
 volumes:
   postgres_data:
 
 networks:
-  data_persistency:
-    name: data_persistency
+  doutor_ie_desafio:
+    name: doutor_ie_desafio
     driver: bridge
