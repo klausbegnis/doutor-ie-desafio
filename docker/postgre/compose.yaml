@@ -1,0 +1,36 @@
+services:
+  postgresql:
+    image: ankane/pgvector
+    container_name: postgresql
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: defaultdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - data_persistency
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgresql
+    restart: unless-stopped
+    networks:
+      - data_persistency
+volumes:
+  postgres_data:
+
+networks:
+  data_persistency:
+    name: data_persistency
+    driver: bridge

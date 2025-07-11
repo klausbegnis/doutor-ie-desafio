@@ -1,0 +1,101 @@
+URL: https://doutorie.com.br/duvidas/
+
+Funcionalidades da Plataforma Doutor-IE
+---------------------------------------
+
+- Como acessar um veículo na Plataforma?
+Para acessar um veículo na Plataforma existem 3 formas:
+Número do chassi – Essa é a identificação mais precisa e rápida. Para isso, basta utilizar a câmera para escanear o código, ou anexar uma imagem do seu dispositivo para efetuar a leitura. Você também pode digitar os 10 primeiros dígitos do chassi do veículo. 
+Seleção manual – A partir da tela inicial, selecione o ano-modelo, a montadora, o veículo e a motorização.
+Últimos acessos – veja uma relação dos últimos veículos acessados em sua conta.
+
+- Como fazer uma busca por chassi para identificar o veículo?
+A busca por chassi por ser feita por 3 formas:
+Utilizando a câmera para escanear o código do chassi
+Anexando uma imagem do seu dispositivo para efetuar a leitura do código do chassi
+Digitando os 10 primeiros dígitos do chassi do veículo.
+	
+- Seleção do veículo com reconhecimento de imagem
+Utilizar o reconhecimento de imagem é a forma de identificação mais precisa e rápida. Para isso, basta utilizar a câmera para escanear o código do chassi, seja no documento ou no próprio veículo.
+
+- Como acessar um manual na Plataforma?
+Após selecionar o veículo, escolha a categoria de manuais disponíveis, como ELÉTRICA ou MECÂNICA, e acesse diretamente o manual desejado.
+
+- Como navegar nos manuais da Plataforma?
+Utilize o menu de navegação dentro de cada manual para mover-se pelos índices, páginas e seções. Além disso, ferramentas de busca rápida também estão disponíveis.
+
+- Navegar entre diferentes manuais de um mesmo veículo
+Para navegar entre diferentes manuais, utilize o menu de navegação de manuais disponível no botão “ + “ em todos os manuais.
+
+- Busca de palavra-chave por comando de voz
+Após selecionar um veículo, você pode efetuar uma busca de palavra-chave utilizando o comando de voz. A Plataforma fará a busca automaticamente nos manuais e listará os resultados.
+
+- O que devo fazer quando não encontrar o material que preciso?
+Se você não encontrar o material desejado, entre em contato com o suporte técnico automotivo da Doutor-IE.
+
+- Como imprimir um manual na Plataforma Doutor-IE?
+Atenção! A impressão é um funcionalidade disponível somente para dispositivos Windows.
+A impressão dos manuais é feita diretamente da Plataforma Doutor-IE. No dispositivo Windows, basta selecionar a opção de impressão (no menu lateral direito) e escolher as páginas que deseja imprimir.
+
+- Como fazer uma revisão periódica completa do veículo?
+Selecione o veículo e entre na funcionalidade de revisões, depois acesse a aba “revisão periódica”. Após preencher o formulário com informações do veículo é possível realizar a revisão completa. No fim ainda é possível gerar e compartilhar um relatório.
+
+- O que são as “condições de uso” ao entrar na revisão do veículo?
+Para iniciar uma revisão é necessário selecionar as condições de uso. Informe as condições de uso para que a Plataforma personalize um plano de manutenção exclusivo para o veículo.
+
+- Posso colocar o tempo de serviço no relatório de revisão?
+Sim! Ao realizar uma revisão, você pode adicionar o tempo de serviço, que será incluído no relatório final gerado pela Plataforma.
+
+- O que são os itens de “recomendação Doutor-IE” disponíveis na revisão periódica?
+Uma “Recomendação Doutor-IE” é um item sugerido pela Doutor-IE com base em vários critérios, como as condições do veículo, dados técnicos, experiência acumulada e boas práticas de manutenção. Essas informações são rigorosamente analisadas e validadas pela equipe Doutor-IE.
+Portanto, você pode ter certeza que uma Recomendação Doutor-IE é uma informação extremamente útil e, muitas vezes, crucial para um serviço de excelência, garantindo uma revisão mais completa, segura e eficiente.
+
+- Como gerar e compartilhar um relatório de revisão periódica?
+Após completar as etapas da revisão, você pode gerar um relatório final detalhado do seu serviço. Basta clicar em “Gerar Relatório”. O documento será automaticamente gerado e ficará disponível para download ou impressão. Compartilhe o relatório final diretamente com o seu cliente via WhatsApp, e-mail ou outro canal digital.
+
+- Posso salvar a revisão periódica para continuar depois?
+Sim, a Plataforma permite salvar o progresso da revisão para que você possa continuar de onde parou, sem perder os dados já inseridos.
+
+- Como imprimir itens de revisão?
+Atenção! A impressão é um funcionalidade disponível somente para dispositivos Windows.
+A impressão dos itens de revisão é feita diretamente da Plataforma Doutor-IE. No dispositivo Windows, selecione se deseja imprimir todos os itens de substituição ou uma revisão periódica completa.
+
+- O que é a Inteligência Artificial Automotiva da Doutor-IE?
+A Inteligência Artificial Automotiva da Doutor-IE é uma ferramenta disponível para todos os assinantes da Plataforma. A IA (inteligência artificial) generativa da Plataforma Doutor-IE auxilia no diagnóstico automotivo, de acordo com os sintomas, e também com códigos de falhas do veículo.
+
+- Código de falha na Inteligência Artificial Automotiva da Doutor-IE
+Insira o código de falha na interface da Inteligência Artificial Automotiva e ela fornecerá os sintomas, testes e as causas mais prováveis.
+
+- Pesquisas de diagnósticos na Inteligência Artificial Automotiva da Doutor-IE
+A Inteligência Artificial Automotiva permite que você pesquise diagnósticos inserindo diretamente os sintomas ou falhas do veículo, auxiliando na identificação de problemas complexos.
+
+- Por que devo avaliar as respostas da Inteligência Artificial Automotiva da Doutor-IE?
+A avaliação das respostas melhora a precisão dos futuros diagnósticos e ajuda a Plataforma a evoluir, tornando-a ainda mais eficaz.
+
+- Consigo ver o histórico de perguntas feitas na Inteligência Artificial Automotiva da Doutor-IE?
+Sim, a Plataforma mantém um histórico das perguntas feitas, permitindo que você consulte diagnósticos anteriores e revisite respostas.
+
+- Há limite para pesquisas com a Inteligência Artificial da Doutor-IE?
+A Inteligência Artificial contempla 2 formas de auxiliar o reparador e possui limites diferentes:
+Pesquisa por códigos de falha – não tem limite.
+Pesquisa para diagnóstico automotivo – limite de 20 créditos por mês. Cada pesquisa equivale a 1 crédito. Os créditos são renovados a cada mês e não são cumulativos.
+Na tela da pesquisa por inteligência artificial você pode acompanhar o consumo dos seus créditos.
+
+- Por que a Inteligência Artificial Automotiva da Doutor-IE é diferente do ChatGPT?
+A Inteligência Artificial Automotiva da Doutor-IE é especializada no setor automotivo, com foco para auxiliar o reparador profissional, utilizando um banco de dados técnicos para oferecer diagnósticos precisos e orientados para manutenção veicular.
+
+- Por que a Inteligência Artificial (IA) pode cometer erros?
+A Inteligência Artificial (IA) da Plataforma Doutor-IE é uma IA generativa, ou seja, tem capacidade de aprender e evoluir. Ela é treinada com uma base de dados, o que permite a ela fornecer respostas adequadas de acordo com a pergunta. No entanto, a precisão depende do treinamento e dos dados recebidos. Com mais interações e feedback dos usuários, a IA aprimora continuamente suas respostas.
+Por isso é importante avaliar as respostas, para a Inteligência Artificial Automotiva da Doutor-IE trazer respostas cada vez mais precisas e eficazes para o diagnóstico automotivo.
+Sempre confirme as informações apresentadas e, em caso de dúvidas, entre em contato com o Suporte Técnico.
+
+- Posso fazer a conversão de códigos originais de filtros para códigos equivalentes na Plataforma Doutor-IE?
+Sim! Os códigos de filtros originais disponíveis para conversão estão destacados em azul, dentro dos manuais de “Fluidos, Aditivos e Filtros” e “Transmissão Automática”, na Plataforma Doutor-IE.
+
+- Posso visualizar a conversão de códigos originais de qualquer peça?
+Atualmente, a conversão de códigos originais está disponível apenas para filtros. As conversões estão destacadas em azul, nos manuais de “Fluidos, Aditivos e Filtros” e “Transmissão Automática”, na Plataforma Doutor-IE.
+A conversão dos códigos de peças são fornecidos e divulgados por cada fabricante. Portanto, a disponibilidade de conversões pode variar conforme o fabricante.
+
+- A Doutor-IE só recomenda o uso de peças originais?
+Sim! A Doutor-IE sempre recomenda o uso de peças originais.
+Atenção! Os códigos de peças equivalentes ao código original que estão disponíveis na Plataforma Doutor-IE, são fornecidos e divulgados por cada fabricante.
