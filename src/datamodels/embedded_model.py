@@ -18,6 +18,8 @@ from sqlmodel import Column, Field, SQLModel
 
 class Embedded(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
+    source_id: int = Field(index=True)
     url: str
-    content: str
-    embedding: Annotated[list[float], Field(sa_column=Column(Vector(768)))]
+    question: str
+    payload: str
+    embedding: Annotated[list[float], Field(sa_column=Column(Vector(1024)))]

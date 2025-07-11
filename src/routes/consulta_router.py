@@ -30,42 +30,25 @@ def request_consulta(
     consulta: Consulta, session: Annotated[Session, Depends(get_session)]
 ) -> Response:
     """
-    request_consulta _summary_
-
-    _extended_summary_
+    Performs a semantic search for a given question.
 
     Args:
-        consulta (Consulta): _description_
+        consulta (Consulta): The user's question.
 
     Returns:
-        Response : _description_
+        Response: A list of relevant documents.
     """
-    # question = consulta.question
+    question_vec = embed(consulta.question, task="query")
 
-    question_vec = embed(consulta.question)
-
-    # query all documents with embeddings
-    docs = session.exec(select(Embedded)).all()
-    assert len(docs) > 0, "No documents found in DB"
-
-    # calculate cosine similarity between question and each doc embedding
-    def similarity(doc_vec):
-        return 1 - cosine(question_vec, np.array(doc_vec))
-
-    sims = [(doc, similarity(doc.embedding)) for doc in docs]
-
-    # sort documents by descending similarity score
-    sims.sort(key=lambda x: x[1], reverse=True)
+    results = session.exec(
+        select(Embedded)
+        .order_by(Embedded.embedding.cosine_distance(question_vec))  # type: ignore
+        .limit(2)
+    ).all()
 
     response_items = []
-    for result in sims:
-        if result[1] > 0.65:
-            sources = []
-            doc = result[0]
-            _id = str(doc.id)
-            source_item = SourceItem(id=_id, url=doc.url)
-            sources.append(source_item)
-            response_items.append(ResponseItems(payload=doc.content, sources=sources))
+    for doc in results:
+        sources = [SourceItem(id=str(doc.source_id), url=doc.url)]
+        response_items.append(ResponseItems(payload=doc.payload, sources=sources))
 
-    _res = Response(docs=response_items)
-    return _res
+    return Response(docs=response_items)

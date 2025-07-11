@@ -23,12 +23,12 @@ def client():
 
 
 @pytest.mark.unit
-def test_consulta(client):
+def test_consulta_aleatoria(client):
     res = client.post(
         "/consulta",
-        json={"question": "Há quanto tempo a Doutor-IE desenvolve documentação técnica?"},
+        json={"question": "técnico - doutor ie - anos - manual"},
     )
 
     print(res.status_code)
     print(res.json())
-    assert res.status_code == False
+    assert res.status_code == 200
